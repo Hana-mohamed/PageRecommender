@@ -98,7 +98,7 @@ streamlit run streamlit_app.py
 ## Performance Optimizations
 
 ### WARC File Access
-The application now prioritizes local WARC file access for content retrieval:
+The application prioritizes local WARC file access for content retrieval:
 1. First attempts to fetch content from local WARC files
 2. Falls back to live web access only if content is not found in WARC
 3. Uses optimized HTML parsing with lxml for faster processing
@@ -262,9 +262,8 @@ The processor includes comprehensive error handling:
 - `find_most_similar_pairs(k)`: Find top-k similar pairs
 - `perform_topic_modeling(n_topics)`: Discover topics
 - `cluster_webpages(n_clusters)`: Group similar webpages
-- `generate_analysis_report()`: Create comprehensive report
 - `save_to_database()`: Save results to SQLite database
-- `visualize_similarity_matrix(filename)`: Create similarity heatmap
+
 
 ### Database Management
 
@@ -306,7 +305,7 @@ The Streamlit app provides an interactive way to explore your NLP analysis resul
 - **Database Statistics**: Detailed analysis and export capabilities
 
 ### Usage
-1. Run the NLP processor: `python nlp_processor_with_db.py`
+1. Run the NLP processor: `python main.py`
 2. Launch the web interface: `streamlit run streamlit_app.py`
 3. Open your browser to the provided URL
 4. Explore webpages, find similarities, and analyze clusters
@@ -322,9 +321,7 @@ Tool for filtering and processing WARC files:
 
 ### Content Processing Tools
 - `download_nltk_data.py`: Download required NLTK datasets
-- `print_content.py`: Debug tool for WARC content inspection
-- `iterate.py`: Utility for efficient WARC iteration
-
+- 
 ## Testing
 
 ### Automated Tests
@@ -356,7 +353,7 @@ Tool for filtering and processing WARC files:
 
 Feel free to extend the processor with additional features:
 - New text cleaning methods
-- Additional similarity metrics
+- Additional similarity metrics (neo4j)
 - More visualization options
 - Performance optimizations
 - Enhanced web interface features
@@ -365,4 +362,5 @@ Feel free to extend the processor with additional features:
 
 ## License
 
-This project is open source and available under the MIT License.
+This project is open source
+
